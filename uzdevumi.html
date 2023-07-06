@@ -1,0 +1,55 @@
+<!DOCtype <!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+</head>
+
+<body>
+    <h1>Anketa</h1>
+    <br>
+    <form>
+        <div class="form-check">
+            <label for="email">E-pasts:</label>
+            <input type="email" id="email" placeholder="xx@xx.lv" required>
+        </div>
+        <br>
+        <div class="form-check">
+            <label for="formFile" class="form-label">Ievietot bildi</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <br>
+        <div class="form-check">
+            <p>Kāds saldējums garšo?:</p>
+            <input type="radio" id="saldējums1" name="garša">
+            <label for="radio1"> Šokolādes</label>
+            <input type="radio" id="saldējums2" name="garša">
+            <label for="radio2"> Vaniļas</label>
+        </div>
+        <br>
+        <div class="form-check">
+            <p>Kādos veikalos iepērcies?:</p>
+            <input type="checkbox" id="veikals1" name="veikals1">
+            <label for="veikals1"> veikals aa</label><br>
+            <input type="checkbox" id="veikals2" name="veikals2">
+            <label for="veikals2"> veikals bb</label><br>
+            <input type="checkbox" id="veikals3" name="veikals3">
+            <label for="veikals3"> veikals cc</label><br>
+            <label for="cits">Cits:</label>
+            <input type="text" id="cits" name="cits">
+        </div>
+    </form>
+</body>
+
+</html>
