@@ -1,0 +1,146 @@
+.grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 1500px) {
+    .grid-container2 {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .grid-container2 {
+        grid-template-columns: auto;
+    }
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(3, 109, 60);
+    padding: 2px;
+    gap: 2px;
+}
+
+.grid-container3>div {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item3 {
+    grid-column: 3;
+    grid-row: 1/ span 3;
+}
+
+.grid-item5 {
+    grid-row: 2;
+    grid-column: 1/span 2;
+}
+
+.fade {
+    animation-name: fade;
+    animation-timing-function: 1.5s;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+.opacity-75 {
+    opacity: 0.75;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.opacity-25 {
+    opacity: 0.25;
+}
+
+.navigacija {
+
+    position: fixed;
+    top: 0;
+    display: inline;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #0b3118;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+li {
+    float: left;
+    display: block;
+    list-style-type: none;
+    border-right: 1px solid;
+
+}
+
+li a {
+    display: block;
+    color: rgb(255, 246, 246);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #0e2518;
+    text-decoration: none;
+    color: rgb(243, 147, 147);
+}
+
+.koks {
+background-image: url(attēli/koks1.jpg);
+background-repeat: repeat;
+}
